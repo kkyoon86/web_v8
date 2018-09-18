@@ -380,23 +380,7 @@ $(document).ready(function () {
 });
 
 
-/*반응형 메뉴*/
-$(function () {
-  (function () {
-    $('#res-men-btn > div').click(function () {
-      var parent = $(this).parent('#res-men-btn');
-      var lines = $(this).find('span');
-      parent.toggleClass('men-close men-open');
-      if (parent.hasClass('men-open')) {
-        lines.addClass('active');
-        parent.next('ul.list-inline').slideDown(400);
-      } else {
-        lines.removeClass('active');
-        parent.next('ul.list-inline').slideUp(400);
-      }
-    });
-  })();
-});
+
 
 //프로그래스 바
 
