@@ -1,0 +1,271 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.peopleContainer {
+  width: 1230px;
+  overflow: auto;
+  padding-top: 60px;
+  margin: 0 auto;
+}
+
+
+img.people {
+  max-width: 100%;
+
+}
+
+.pTitle {
+  font-family: 'prompt', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-align: center;
+  padding-bottom: 40px;
+  color: #fc5127;
+}
+
+.imgContainer {
+  position: relative;
+  padding-bottom: 40px;
+  overflow: hidden;
+}
+
+.peopleImgBox1 {
+  overflow: hidden;
+  width: 34%;
+  float: left;
+  margin-bottom: 6px;
+  margin-right: 12px;
+}
+
+.peopleRow {
+  position: relative;
+  display: block;
+  width: inherit;
+  margin-left: 0;
+  margin-right: 0;
+  overflow: auto;
+}
+
+.peopleLine {
+  margin: 8px 0 7px 0;
+  width: 6%;
+  border-top: 2px solid #525252;
+}
+
+.peopleTitle2 {
+  padding-top: 0px;
+  font-size: 1.5rem;
+  color: #525252;
+  font-weight: 700;
+}
+
+.peopleTitle {
+  padding-top: 0px;
+  font-size: 2rem;
+  color: #fa5326;
+  font-weight: 700;
+}
+
+.peoplePosition {
+  padding-top: 20px;
+  font-size: 2rem;
+  color: #fa5326;
+  font-weight: 500;
+}
+
+.peopleText {
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #a4a4a4;
+  padding-top: 0;
+  transition: transform .3s;
+}
+
+.peopleText2 {
+  padding-top: 8px;
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: #a4a4a4;
+  line-height: 2rem;
+  transition: transform .3s;
+}
+
+img.people {
+  transition: transform .3s;
+}
+
+div.zoom:hover img {
+  transform: scale(1.1);
+}
+
+div.zoom:hover .peopleText {
+  color: #5e5e5e;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
+.memberTable {
+  width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+
+
+
+.memberImageDetail {
+  width: 100%;
+  height: 100%;
+  padding: 25px 25px 25px 25px;
+
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.3px;
+  text-align: left;
+  color: #ffffff;
+
+  background-color: rgba(0, 0, 0, 0.5);
+
+  animation: turnoff 0.3s linear forwards;
+}
+
+.memberImageDetail:hover {
+  animation: turnon 0.3s linear forwards;
+}
+
+@keyframes turnon {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes turnoff {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+
+.plusButton {
+  float: right;
+  color: #a4a4a4;
+  font-size: 16px;
+}
+
+.plusEx {
+  padding: 24px 0 0 0;
+  font-size: 1.3rem;
+  color: #a4a4a4;
+  width: 100%;
+  display: none;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+  animation: turnon 0.3s linear forwards;
+}
+
+.hoverPlus {
+  color: #a4a4a4;
+}
+
+.hoverPlus:hover {
+  color: #fc5127;
+}
+
+.hoverPlus:focus {
+  color: #fc5127;
+}
+
+.hoverPlus:-webkit-any-link {
+  text-decoration: none;
+}
+
+
+@media (max-width: 1200px) {
+  .membersContainer {
+    width: 992px;
+  }
+
+  .memberContainer {
+    width: 314px;
+
+  }
+  .memberImageContainer {
+    width: 314px;
+    height: 314px;
+  }
+
+}
+
+
+@media (max-width: 992px) {}
+
+@media (max-width: 768px) {
+  .peopleContainer {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .peopleRow {
+    width: 93%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .box {
+    padding: 0 5px !important;
+  }
+  .peopleTitle {
+    padding-top: 0;
+    font-size: 1.6rem;
+
+    font-weight: 700;
+  }
+  .peopleTitle2 {
+    padding-top: 0;
+    font-size: 1.5rem;
+
+    font-weight: 700;
+  }
+  .peopleImgBox1 {
+    overflow: hidden;
+    width: 24%;
+    float: left;
+    margin-bottom: 30px;
+    margin-right: 12px;
+  }
+
+
+  .peoplePosition {
+    padding-top: 8px;
+    font-size: 1.6rem;
+
+    font-weight: 500;
+  }
+  .peopleText {
+    padding-top: 4px;
+    padding-bottom: 8px;
+    font-size: 1.4rem;
+    color: #a4a4a4;
+  }
+  .imgContainer {
+    padding-bottom: 20px;
+  }
+  .memberTable {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {}

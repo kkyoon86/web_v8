@@ -1,0 +1,10 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#body {
+  font-family: 'prompt', sans-serif;
+  background-color: #fff;
+
+  padding: 0px;
+  margin: 0px;
+}

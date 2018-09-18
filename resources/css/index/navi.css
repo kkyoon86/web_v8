@@ -1,0 +1,177 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.rowMenu {
+  display: none;
+}
+
+ul.list-inline {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  background-color: #fc5127;
+}
+
+
+
+.naviBar {
+  height: 60px;
+  line-height: 60px;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  text-decoration: none;
+  font-family: 'prompt', sans-serif;
+
+
+}
+
+.someLogo {
+  height: 36px;
+}
+
+.naviBar.blur {
+  background-color: #fc5127;
+}
+
+.naviContainer {
+  width: 1200px;
+  position: relative;
+  margin: 0 auto 0 auto;
+}
+
+.naviLogo {
+  top: 0px;
+  left: 0px;
+
+  width: 200px;
+  height: 100%;
+  text-align: left;
+
+
+  font-weight: bold;
+  letter-spacing: 0.6px;
+  color: #fff;
+  float: left;
+}
+
+.naviBtn {
+  margin-left: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  color: #fff;
+}
+
+.naviLinkContainer {
+  float: right;
+
+  height: 100%;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #d1d1d1;
+  opacity: 1;
+  /* Firefox */
+}
+
+.naviLink {
+  list-style: none;
+  text-align: right;
+}
+
+.naviLink > li {
+  display: inline;
+}
+
+.naviBtn:hover {
+  text-decoration: underline;
+  font-weight: 400;
+  color: #fff;
+}
+
+
+
+@media(max-width: 992px) {
+  .naviBar {
+    height: 100px;
+  }
+
+  .naviContainer {
+    width: 768px;
+  }
+
+  .naviEmailContainer {
+    width: 400px;
+    left: 368px;
+
+  }
+
+  .naviLinkContainer {
+    top: 40px;
+    left: auto;
+    right: 0px;
+    width: 100%;
+  }
+
+  .naviLink {
+    margin: 0 auto 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .naviContainer {
+    width: 576px;
+  }
+  .naviEmailContainer {
+    width: 250px;
+    left: 326px;
+  }
+  ul.naviLink {
+    padding: 0;
+  }
+  .naviLogo {
+    font-size: 20px;
+  }
+  .rowMenu {
+    display: block;
+  }
+  .naviLinkContainer {
+    display: none;
+  }
+  .naviBar {
+    height: 40px;
+    line-height: 40px;
+  }
+  .naviBtn {
+    font-size: 14px;
+    margin: 0 2px 0 2px;
+  }
+}
+
+@media (max-width: 576px) {
+  .naviContainer {
+    width: 360px;
+    text-align: center;
+  }
+
+  .naviLogo {
+
+    margin: 0 auto 0 auto;
+  }
+
+
+  .naviLink {
+    text-align: center;
+  }
+
+  .naviLink > li {
+    text-align: center;
+  }
+
+
+}

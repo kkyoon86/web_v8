@@ -1,0 +1,67 @@
+@charset "utf-8";
+/* CSS Document */
+
+textarea {
+  resize: none;
+}
+
+.form-label {
+  font-size: 1.2rem;
+  color: #ec407a;
+  margin: 0;
+  display: block;
+  opacity: 1;
+  -webkit-transition: .333s ease top, .333s ease opacity;
+  transition: .333s ease top, .333s ease opacity;
+}
+
+.form-control {
+  border-radius: 0 !important;
+  border-color: #ccc;
+  border-width: 0 0 2px 0;
+  border-style: none none solid none !important;
+  box-shadow: none !important;
+}
+
+.form-control:focus {
+  box-shadow: none !important;
+  border-color: #ec407a !important;
+}
+
+.js-hide-label {
+  opacity: 0;
+}
+
+.js-unhighlight-label {
+  color: #999
+}
+
+.btn-start-order {
+  background: 0 0 #ffffff;
+  border: 1px solid #2f323a;
+  border-radius: 3px;
+  color: #2f323a;
+  font-size: 16px;
+  line-height: inherit;
+  margin: 30px 0;
+  padding: 10px 50px;
+  text-transform: uppercase;
+  transition: all 0.25s ease 0s;
+}
+
+.btn-start-order:hover,
+.btn-start-order:active,
+.btn-start-order:focus {
+  border-color: #ec407a;
+  color: #fff !important;
+  background-color: #ec407a;
+}
+
+button.btn.btn-start-order {
+  border: 1px solid #EC407A;
+  color: #ec407a;
+  letter-spacing: 1px;
+  padding: 6px 20px;
+  border-radius: 0;
+  font-family: 'prompt', sans-serif;
+}

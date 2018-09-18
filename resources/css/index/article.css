@@ -1,0 +1,536 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.a-1 {
+  width: 120px;
+  stroke: rgba(255, 255, 255, 0.5);
+
+  fill: none;
+  stroke-width: 0.7px;
+  top: 250px;
+  left: 90px;
+  position: absolute;
+  z-index: 999;
+}
+
+.a-2 {
+  width: 120px;
+  stroke: rgba(255, 255, 255, 0.5);
+
+  fill: none;
+  stroke-width: 0.7px;
+  top: 80px;
+  left: 1140px;
+  position: absolute;
+  z-index: 999;
+}
+
+.article32px {
+  font-size: 32px !important;
+}
+
+.article24px {
+  font-size: 24px !important;
+}
+
+.articlecContainer1 {
+  margin-top: 100px;
+}
+
+.articleBox {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #fff;
+  text-align: center;
+  color: #ababab;
+  overflow: auto;
+
+}
+
+.articleContainer {
+  width: 1200px;
+  margin: 0 auto 0 auto;
+}
+
+.articleTitle {
+  width: 100%;
+  font-family: 'prompt', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #fc5127;
+  text-align: center;
+  padding-bottom: 40px;
+
+}
+
+
+.somesingApp {
+  padding-top: 180px;
+  font-size: 24px;
+  text-align: left;
+  color: #525252;
+  font-weight: 400;
+  font-family: 'prompt', sans-serif;
+}
+
+.somesingAppText {
+  padding-top: 24px;
+  text-align: left;
+  font-size: 20px;
+  font-family: 'prompt', sans-serif;
+  padding-bottom: 12px;
+  color: #525252;
+  line-height: 30px;
+}
+
+.somesingAppText2 {
+  padding-top: 12px;
+  text-align: left;
+  font-size: 20px;
+  font-family: 'prompt', sans-serif;
+  padding-bottom: 12px;
+  color: #525252;
+  line-height: 30px;
+}
+
+.ecoSystemTitle {
+  padding-top: 130px;
+  font-size: 24px;
+  text-align: left;
+  color: #fff;
+  font-weight: 400;
+  font-family: 'prompt', sans-serif;
+
+}
+
+.ecoSystemText {
+  padding-top: 24px;
+  text-align: left;
+  font-size: 20px;
+  font-family: 'prompt', sans-serif;
+  line-height: 30px;
+  padding-bottom: 12px;
+  color: #fff;
+}
+
+.ecoSystemText2 {
+  padding-top: 12px;
+  text-align: left;
+  font-size: 20px;
+  font-family: 'prompt', sans-serif;
+  padding-bottom: 12px;
+  color: #fff;
+  line-height: 30px;
+}
+
+.mockupBox {
+  text-align: right;
+}
+
+.mockup1 {
+  width: 45%;
+  margin-top: 100px;
+}
+
+.mockup2 {
+  width: 45%;
+  margin-top: 100px;
+  margin-left: -40px;
+}
+
+.articleContent {
+  font-size: 20px;
+  font-weight: 300;
+  font-family: 'prompt', sans-serif;
+  letter-spacing: 0.4px;
+  color: #525252;
+}
+
+.articleImage {
+  width: 670px;
+  resize: auto;
+}
+
+.articleVerticalImage {
+  width: 670px;
+  resize: auto;
+  margin: 30px auto 0 auto;
+}
+
+.articleWideImage {
+  width: 800px;
+  resize: auto;
+  margin: 30px auto 0 auto;
+}
+
+.articleWideFullSizeImage {
+  width: 900px;
+  resize: auto;
+  margin: 30px auto 0 auto;
+}
+
+/*.articleMockupBox {
+  overflow: auto;
+}*/
+
+.fullArticle {
+  width: 1200px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ecoSystem {
+  font-family: 'prompt', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #fff;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.articleDetailBox {
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: relative;
+  background-position-y: -120px;
+}
+
+.someUser {
+  font-size: 24px;
+  text-align: left;
+  color: #525252;
+  font-weight: 400;
+  font-family: 'prompt', sans-serif;
+
+}
+
+.someUserText {
+  padding-top: 0px;
+  text-align: left;
+  font-size: 20px;
+  font-family: 'prompt', sans-serif;
+  line-height: 30px;
+  padding-bottom: 40px;
+  color: #525252;
+
+}
+
+
+@keyframes slideInUp {
+  from {
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.articleDetailContainer.slideInUp {
+  animation-name: slideInUp;
+}
+
+
+
+.articleDetailTitle {
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  color: #fff;
+  font-family: 'prompt', sans-serif;
+}
+
+.articleDetailContent {
+  margin-top: 15px;
+  font-family: 'prompt', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 0.4px;
+  text-align: left;
+  color: #fff;
+  width: 580px;
+  margin-bottom: 40px;
+}
+
+.userFlow {
+  width: 100%;
+}
+
+.userFlowBox {
+  padding: 20px;
+  /*border: 1px solid #fc5127;*/
+}
+
+.ecoSystemPng {
+  width: 90%;
+  padding-bottom: 50px;
+  padding-top: 10px;
+}
+
+.ecoSystemBox {
+  text-align: left;
+}
+
+.roadmapPink {
+  background-color: #fc5127;
+  padding-bottom: 80px;
+}
+
+.roadmapTitle {
+  color: #fff;
+}
+
+.col-md-12.userFlowBox {
+  padding: 50px;
+}
+
+
+@media (max-width: 1200px) {
+
+  .articleContainer {
+    width: 992px;
+  }
+
+  .articleVerticalImage {
+    width: 600px;
+  }
+
+  .articleWideImage {
+    width: 900px;
+  }
+
+  .articleWideFullSizeImage {
+    width: 972px;
+  }
+
+  .articleDetailContainer {
+    width: 314px;
+  }
+
+  .articleDetailContainerMargin {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+
+@media (max-width: 992px) {
+
+  .articleVerticalImage {
+    width: 500px;
+  }
+
+  .articleWideImage {
+    width: 700px;
+  }
+
+  .articleWideFullSizeImage {
+    width: 748px;
+  }
+
+  .articleContainer {
+    width: 768px;
+  }
+
+  .articleDetailContainer {
+    width: 768px;
+  }
+
+  .articleDetailContainerMargin {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .articleVerticalImage {
+    width: 450px;
+  }
+
+  .articleWideImage {
+    width: 600px;
+  }
+
+  .articleWideFullSizeImage {
+    width: 556px;
+  }
+
+  .articleContainer {
+    width: 93%;
+  }
+
+  .articleDetailContainer {
+    width: 576px;
+  }
+
+  .articleDetailContainerMargin {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .articleDetailBox {
+    width: 100%;
+  }
+  .articleDetailContent {
+    margin-top: 15px;
+    height: 130px;
+    font-family: 'prompt', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: 0.4px;
+    text-align: left;
+    color: #969696;
+    width: 100%;
+  }
+
+  .articleDetailContainerMargin {
+    margin-left: 0;
+  }
+
+  .articleDetailContainerMargin2 {
+    margin-left: 0;
+  }
+  .fullArticle {
+    width: 100%;
+  }
+  .articleBox {
+    padding-top: 40px;
+  }
+  .somesingApp {
+    font-size: 18px;
+    padding-top: 40px;
+  }
+  .somesingAppText {
+    padding-top: 8px;
+    text-align: left;
+    font-size: 16px;
+    line-height: 28px;
+    padding-bottom: 8px;
+  }
+  .somesingAppText2 {
+    padding-top: 8px;
+    text-align: left;
+    font-size: 16px;
+    line-height: 28px;
+    padding-bottom: 8px;
+  }
+  .ecoSystemTitle {
+    padding-top: 40px;
+    font-size: 18px;
+  }
+  .ecoSystemText {
+    padding-top: 8px;
+    text-align: left;
+    font-size: 16px;
+    line-height: 28px;
+    padding-bottom: 8px;
+  }
+  .ecoSystemText2 {
+    padding-top: 8px;
+    text-align: left;
+    font-size: 16px;
+    line-height: 28px;
+    padding-bottom: 50px;
+  }
+  .someUser {
+    font-size: 18px;
+  }
+  .someUserText {
+    padding-top: 8px;
+    text-align: left;
+    font-size: 16px;
+    line-height: 28px;
+    padding-bottom: 8px;
+  }
+  .userFlow {
+    width: 100%;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  .ecoSystemPng {
+    width: 100%;
+    padding-bottom: 0px;
+  }
+  .article32px {
+    font-size: 24px !important;
+  }
+  .article24px {
+    font-size: 16px !important;
+  }
+  .mockup1 {
+    width: 45%;
+    margin-top: 20px;
+    margin-left: -40px;
+  }
+  .mockup2 {
+    width: 45%;
+    margin-top: 20px;
+    margin-left: -10px;
+  }
+  .col-md-5.articleMockup {
+    padding: 0;
+  }
+  .articleMockupBox.mockupbox2 {
+    width: 93%;
+    margin: auto;
+  }
+  .col-md-12.userFlow {
+    padding: 0;
+  }
+  .articleDetailBox {
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+    background-position-y: 0px;
+    background-position-x: -300px;
+  }
+}
+
+
+@media (max-width: 576px) {
+  .articleContainer {
+    width: 93%;
+  }
+
+  .articleWideFullSizeImage {
+    width: 350px;
+  }
+
+  .articleTitle {
+    font-size: 20px;
+  }
+
+  .articleContent {
+    font-size: 16px;
+  }
+
+  .articleDetailTitle {
+    font-size: 20px;
+  }
+
+  .articleDetailContent {
+    font-size: 16px;
+  }
+
+  .articleVerticalImage {
+    width: 360px;
+  }
+
+  .articleWideImage {
+    width: 360px;
+  }
+
+  .articleDetailContainer {
+    width: 350px;
+    margin-top: 50px;
+  }
+}

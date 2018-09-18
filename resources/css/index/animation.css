@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* CSS Document */
+
+.turnRed {
+  /*color: #fff;*/
+  animation: animateTurnRed 0.3s linear forwards;
+}
+
+
+.scFadeInUp {
+  animation: fadeInUp 0.3s linear forwards;
+}
+
+
+.scPreFadeInUp {
+  opacity: 0.5;
+  transform: translateY(10px);
+}
+
+
+.scFadeInLong {
+  animation: fadeIn 2s linear forwards;
+}
+
+.scPreFadeIn {
+  opacity: 0;
+}
+
+/*
+.scScaleUp {
+  animation: scaleUp 2s linear
+}
+
+.scPreScaleUp {
+  transform: scale(1);
+}*/
+
+@keyframes animateTurnRed {
+  to {
+    color: #fff;
+    text-decoration: underline;
+
+  }
+}
+
+
+@keyframes fadeIn {
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes scaleUp {
+  to {
+    transform: scale(2);
+  }
+}

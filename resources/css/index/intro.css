@@ -1,0 +1,258 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.introBox {
+  height: 700px;
+  vertical-align: middle;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.introSing {
+  font-size: 20px;
+}
+
+.introContainer {
+  margin: 0 auto 0 auto;
+  padding-top: 110px;
+}
+
+.introWelcome {
+  font-family: 'prompt', sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  color: #fff;
+  margin-left: 5vw;
+  font-style: italic;
+  position: absolute;
+  width: 620px;
+  line-height: 70px;
+  top: 140px;
+}
+
+
+.introContent {
+
+  font-size: 18px;
+  font-family: 'prompt', sans-serif;
+  letter-spacing: 0.5px;
+  color: #fff;
+  margin-left: 53vw;
+}
+
+
+
+.introRightBorder {
+  display: inline-block;
+}
+
+.mainTitleBox {
+  height: 700px;
+  padding: 180px;
+
+}
+
+.titleCommon {
+  color: #fff;
+  font-weight: 700;
+  font-size: 32px;
+  font-family: 'prompt', sans-serif;
+  letter-spacing: 1.5px;
+}
+
+.maintitle3 {
+  letter-spacing: 4px !important;
+}
+
+.mainText {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.8px;
+  padding: 16px;
+}
+
+.someButton {
+  background-color: #EF4123;
+  border: none;
+  color: white;
+  width: 200px;
+  padding: 16px 0;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'prompt', sans-serif;
+  letter-spacing: 1px;
+  margin-top: 40px;
+}
+
+.someB1 {
+  margin-right: 30px;
+}
+
+/*패럴렉스 실험*/
+
+.scScaleBox {
+  width: 100px;
+  height: 100px;
+  background-color: #225158;
+
+}
+
+.bcg-parallax {
+  padding: 150px 0;
+  color: #fff;
+  background-color: #000;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  overflow: hidden
+}
+
+.bcg {
+  background: url('../../img/index/intro/intro.jpg') no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 150%;
+  top: 0;
+  z-index: 1;
+  opacity: 0.7;
+}
+
+.content-parall {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1120px;
+  position: relative;
+  z-index: 2;
+  font-size: 32px;
+  font-family: 'prompt', sans-serif;
+}
+
+
+
+
+
+/* 모바일 사이즈 때 적용되는 스타일 시트 */
+
+@media (max-width: 1200px) {
+  .introContainer {
+    width: 992px;
+  }
+}
+
+
+@media (max-width: 992px) {
+  .introContainer {
+    width: 768px;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .introContainer {
+    width: 576px;
+    padding-top: 100px;
+  }
+
+  .introCounterSection {
+    display: block;
+  }
+
+  .introWelcome {
+    font-size: 35px;
+  }
+
+  .introCounterContrainer {
+    width: 100px;
+    height: 100px;
+  }
+
+  .introCounterCaption {
+    height: 30px;
+    font-size: 1.7rem;
+  }
+
+  .introCounterBar {
+    height: 2px;
+    width: 40px;
+  }
+
+  .introCounterValue {
+    font-size: 40px;
+    height: 60px;
+  }
+
+  .introContent {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    margin-left: 0;
+  }
+  .introCounterBar.introRightBorder {
+    display: none;
+  }
+  div#home {
+    text-align: center;
+  }
+
+  .introBox {
+    height: 90vh;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position-x: -300px;
+    background-position-y: 30px;
+    text-align: center;
+  }
+
+  .introWelcome {
+    font-size: 30px;
+    text-align: center;
+    margin-left: 0;
+    letter-spacing: 3px;
+    font-weight: 700;
+    position: relative;
+    top: 0;
+    line-height: 36px;
+    width: 100%;
+  }
+  .introCounterBox {
+    /*	position: absolute;*/
+    /*	width: 420px;*/
+    margin: 25px auto 0 auto;
+    text-align: left;
+    display: inline-block;
+    margin-left: 0;
+
+  }
+
+
+}
+
+::placeholder {
+  color: #ededed;
+  opacity: 1;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #ededed;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #ededed;
+}
+
+@media (max-width: 576px) {
+  .introContainer {
+    width: 360px;
+  }
+
+
+}
