@@ -1,9 +1,8 @@
 // 페이지가 로딩 되었을 때 실행할 기능
 $(document).ready(function () {
-  setSlidingLink();
-  setNaniLinkAnimation();
   //parallax
   var controller = new ScrollMagic.Controller();
+
   //build scene
   var scene = new ScrollMagic.Scene({
       triggerElement: "#trigger2",
