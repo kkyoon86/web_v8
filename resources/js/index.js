@@ -36,12 +36,23 @@ $(document).ready(function () {
     .setTween(parallaxTl)
     .addTo(controller);
 
+  //메인이미지 패럴렉스
+  var mainParallaxScene = new ScrollMagic.Scene({
+      triggerElement: '.introBox',
+      triggerHook: 1,
+      duration: '200%'
+    })
+    .setTween(TweenMax.from('.introParallax', 1, {
+      y: '-30%',
+      ease: Power0.easeNone
+    }))
+    .addTo(controller);
 
   //타이머
   var timer;
 
-  var compareDate = new Date();
-  compareDate.setDate(compareDate.getDate() + 7); //just for this demo today + 7 days
+  var compareDate = new Date("2018-09-19");
+  compareDate.setDate(compareDate.getDate() + 2); //just for this demo today + 7 days
 
   timer = setInterval(function () {
     timeBetweenDates(compareDate);
@@ -89,7 +100,7 @@ $(document).ready(function () {
 /* -------------------------------------------------------------------------------- */
 /* 내비바가 일정 스크롤 내려왔을때 흐림배경 추가 */
 var last_top = 0;
-var scrollBalance = 50;
+var scrollBalance = 100;
 
 $(window).scroll(function () {
   var this_top = $(this).scrollTop();

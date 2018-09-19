@@ -27,6 +27,7 @@
 
   <!-- fontawesome StyleSheets -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
   <!-- animation StyleSheets -->
   <link rel="stylesheet" href="resources/css/index/animation.css">
 
@@ -79,25 +80,27 @@
 
       </div>
     </nav>
+    <div class="mainTitleBox">
+      <div class="titleCommon maintitle">Social Music Service</div>
+      <div class="titleCommon maintitle2">based on</div>
+      <div class="titleCommon maintitle3">BLOCKCHAIN TECHNOLOGY</div>
+      <div class="mainText">You have personal studio in your hands.<br> Mix up and create your own songs!</div>
 
+      <a href="#" class="someButton someB1">WHITE PAPER</a>
+      <a href="#" class="someButton someB2">BUY COIN</a>
+    </div>
 
 
     <!-- 인트로 시작 -->
-    <div id="sectionHome">
-      <!-- 마우스 섹션 트리거 -->
 
-      <div class="introBox" style="background-image: url(./resources/img/index/intro/intro.jpg)">
-        <div class="mainTitleBox">
-          <div class="titleCommon maintitle">Social Music Service</div>
-          <div class="titleCommon maintitle2">based on</div>
-          <div class="titleCommon maintitle3">BLOCKCHAIN TECHNOLOGY</div>
-          <div class="mainText">You have personal studio in your hands.<br> Mix up and create your own songs!</div>
+    <!-- 마우스 섹션 트리거 -->
 
-          <a href="#" class="someButton someB1">WHITE PAPER</a>
-          <a href="#" class="someButton someB2">BUY COIN</a>
-        </div>
+    <div id="sectionHome" class="introBox">
 
-      </div>
+
+
+      <div class="introParallax"></div>
+
 
 
     </div>
@@ -111,39 +114,61 @@
             <div class="preSaleStartText">Schedule : 2018.00.00 00:00(KST)-2018.00.00 00:00(KST)</div>
 
           </div>
-          <div class="col-md-6">
-            <div id="timer">
-              <span id="days"></span>days
-              <span id="hours"></span>hours
-              <span id="minutes"></span>minutes
-              <span id="seconds"></span>seconds
+          <div class="col-md-6 timerCol">
+            <div id="timer" class="timerContainer clearfix">
+              <div class="timeBox timeBoxMargin">
+                <div><span id="days"></span></div>
+                days
+              </div>
+              <div class="counterBorder">:</div>
+              <div class="timeBox timeBoxMargin">
+                <div><span id="hours"></span></div>
+                hours
+              </div>
+              <div class="counterBorder">:</div>
+              <div class="timeBox timeBoxMargin">
+                <div><span id="minutes"></span></div>
+                minutes
+              </div>
+              <div class="counterBorder">:</div>
+              <div class="timeBox">
+                <div><span id="seconds"></span></div>
+                seconds
+              </div>
             </div>
           </div>
+
           <div class="col-md-12 barBox">
             <div id="progressBar">
               <span id="progressText">
 		<span id="progressCount">0</span>%
               </span>
             </div>
-            <a href="#" class="someButton someB2">BUY COIN</a>
+            <a href="#" class="someButtonInCounter">BUY NOW</a>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- article 1 시작 -->
+    <!-- 썸씽 설명 시작 -->
     <div id="sectionSome" class="articlecContainer1">
       <!-- 마우스트리거 -->
       <div class="articleBox">
         <div class="articleContainer">
           <div class="articleTitle article32px">WHAT IS SOMESING?</div>
-          <div class="articleContent article24px">Preator(Professional+Creator) Karaoke App</div>
+          <div class="articleContent article24px">Preator(Professional+Creator) <span class="pointTitle">Karaoke App</span> with <span class="pointTitle">Criptocurrency</span></div>
 
 
 
           <!-- 상세설명 박스 -->
           <!--<img class="scFadeInUp articleVerticalImage" src="./resources/img/index/article1/service.png" />-->
           <div class="articleMockupBox">
+            <div class="col-md-7 articleMockup">
+              <div class="mockupBox">
+                <img class="mockup1" src="./resources/img/index/article1/mockup1.png" alt="">
+                <img class="mockup2" src="./resources/img/index/article1/mockup2.png" alt="">
+              </div>
+            </div>
             <div class="col-md-5 articleMockup">
               <div class="somesingApp"><strong>SomeSing에서</strong></div>
               <div class="somesingAppText">- 매일 업데이트되는 신곡<br> - Studio 식 음향/이펙트 기술을 통한 레코딩<br> - 다른 User와 즐길수 있는 소셜 뮤직 네트워크
@@ -153,18 +178,36 @@
 
               </div>
             </div>
-            <div class="col-md-7 articleMockup">
-              <div class="mockupBox">
-                <img class="scFadeInUp mockup1" src="./resources/img/index/article1/mockup1.png" alt="">
-                <img class="scFadeInUp mockup2" src="./resources/img/index/article1/mockup2.png" alt="">
-              </div>
-            </div>
+
           </div>
         </div>
       </div>
     </div>
+    <!--썸씽 설명 종료-->
 
-    <div class="articleDetailBox" style="background-image: url(./resources/img/index/article1/ecosystem_bg.jpg)">
+
+    <!--화이트페이퍼 다운-->
+    <div class="articleContainerWhite">
+
+      <div class="articleBox whitPaperBox">
+        <div class="whitePaperBcg"></div>
+
+
+      </div>
+      <div class="col-md-12 whitePaperContents">
+        <div class="articleTitle whitepaperTitle">WHITEPAPER</div>
+        <div>
+          <a href="#" class="someButton whiteButton">ENGLISH</a>
+          <a href="#" class="someButton whiteButton">한국어</a>
+          <a href="#" class="someButton whiteButton">日本語</a>
+        </div>
+      </div>
+    </div>
+    <!--화이트페이퍼 다운 끝-->
+
+
+    <!--에코시스템 시작-->
+    <div class="articleDetailBox">
       <div class="fullArticle">
 
         <div class="ecoSystem">ECO SYSTEM</div>
@@ -190,7 +233,7 @@
 
       </div>
     </div>
-    <!-- article 1 종료 -->
+    <!-- 에코시스템 종료 -->
 
     <!-- article 2 -->
     <div class="articleBox">
