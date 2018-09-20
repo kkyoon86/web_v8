@@ -100,24 +100,16 @@
   line-height: 30px;
 }
 
-.ecoSystemTitle {
-  padding-top: 130px;
-  font-size: 24px;
-  text-align: left;
-  color: #525252;
-  font-weight: 400;
-  font-family: 'prompt', sans-serif;
 
-}
 
 .ecoSystemText {
-  padding-top: 24px;
+
   text-align: left;
   font-size: 20px;
   font-family: 'prompt', sans-serif;
-  line-height: 30px;
-  padding-bottom: 12px;
+  padding: 12px 0 20px 0;
   color: #525252;
+  text-align: center;
 }
 
 .ecoSystemText2 {
@@ -189,9 +181,8 @@
   font-size: 24px;
   font-weight: 700;
   letter-spacing: 3px;
-  color: #525252;
+  color: #EF4123;
   text-align: center;
-  padding-bottom: 40px;
 }
 
 .articleDetailBox {
@@ -227,24 +218,10 @@
   background-color: #000;
   text-align: center;
   vertical-align: middle;
-  position: absolute;
-  overflow: hidden;
-  z-index: -2;
-  width: 100%;
   height: 300px;
 
 }
 
-.whitePaperBcg {
-  background: url('../../img/index/intro/intro.jpg') no-repeat;
-  background-size: cover;
-  position: absolute;
-  width: 100%;
-  height: 150%;
-  top: 0;
-  z-index: -1;
-  opacity: 0.5;
-}
 
 a.someButton:nth-child(1),
 a.someButton:nth-child(2) {
@@ -259,12 +236,7 @@ a.someButton:nth-child(2) {
   margin-top: 0;
 }
 
-.whitePaperContents {
-  position: absolute;
-  top: 20px;
-  text-align: center;
-  padding-top: 60px;
-}
+
 
 
 
@@ -327,7 +299,8 @@ a.someButton:nth-child(2) {
 }
 
 .ecoSystemBox {
-  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .roadmapPink {
