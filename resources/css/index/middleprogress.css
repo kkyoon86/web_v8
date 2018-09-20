@@ -1,0 +1,14 @@
+@charset "UTF-8";
+/* CSS Document */
+
+div#middleCounterSome {
+  background-color: #EF4123;
+  overflow: auto;
+  padding: 40px;
+
+}
+
+.middleCounterBox {
+  width: 1200px;
+  margin: 0 auto;
+}

@@ -12,17 +12,18 @@
   <link href="https://fonts.googleapis.com/css?family=Prompt:400,700,900" rel="stylesheet">
 
   <!-- Custom StyleSheets -->
-  <link rel="stylesheet" href="https://kkyoon86.github.io/web_v8/resources/css/index/intro.css">
-  <link rel="stylesheet" href="https://kkyoon86.github.io/web_v8/resources/css/index/progressbar.css">
-  <link rel="stylesheet" href="https://kkyoon86.github.io/web_v8/resources/css/index/navi.css">
-  <link rel="stylesheet" href="https://kkyoon86.github.io/web_v8/resources/css/index/body.css">
-  <link rel="stylesheet" href="https://kkyoon86.github.io/web_v8/resources/css/index/article.css">
-  <link rel="stylesheet" href="https://kkyoon86.github.io/web_v8/resources/css/index/members.css">
-  <link rel="stylesheet" href="https://kkyoon86.github.io/web_v8/resources/css/index/partner.css">
-  <link rel="stylesheet" href="https://kkyoon86.github.io/web_v8/resources/css/index/footer.css">
-  <link rel="stylesheet" href="https://kkyoon86.github.io/web_v8/resources/css/index/faq.css">
-  <link rel="stylesheet" href="https://kkyoon86.github.io/web_v8/resources/css/index/contact.css">
-  <link rel="stylesheet" href="https://kkyoon86.github.io/web_v8/resources/css/index/roadmap.css">
+  <link rel="stylesheet" href="./resources/css/index/intro.css">
+  <link rel="stylesheet" href="./resources/css/index/progressbar.css">
+  <link rel="stylesheet" href="./resources/css/index/navi.css">
+  <link rel="stylesheet" href="./resources/css/index/body.css">
+  <link rel="stylesheet" href="./resources/css/index/article.css">
+  <link rel="stylesheet" href="./resources/css/index/members.css">
+  <link rel="stylesheet" href="./resources/css/index/partner.css">
+  <link rel="stylesheet" href="./resources/css/index/footer.css">
+  <link rel="stylesheet" href="./resources/css/index/faq.css">
+  <link rel="stylesheet" href="./resources/css/index/contact.css">
+  <link rel="stylesheet" href="./resources/css/index/roadmap.css">
+  <link rel="stylesheet" href="./resources/css/index/middleprogress.css">
 
 
   <!-- fontawesome StyleSheets -->
@@ -253,7 +254,49 @@
   </div>
 
   <!-- article 2 종료-->
+  <div id="middleCounterSome" class="sectionSomeMiddle">
+    <div class="middleCounterBox">
+      <div class="middleCounterRow">
+        <div class="col-md-6">
+          <div class="preSaleStart">Pre-Sale Starts In</div>
+          <div class="preSaleStartText">Schedule : 2018.00.00 00:00(KST)-2018.00.00 00:00(KST)</div>
 
+        </div>
+        <div class="col-md-6 timerCol">
+          <div id="timer" class="timerContainer clearfix">
+            <div class="timeBox timeBoxMargin">
+              <div><span id="days"></span></div>
+              days
+            </div>
+            <div class="counterBorder">:</div>
+            <div class="timeBox timeBoxMargin">
+              <div><span id="hours"></span></div>
+              hours
+            </div>
+            <div class="counterBorder">:</div>
+            <div class="timeBox timeBoxMargin">
+              <div><span id="minutes"></span></div>
+              minutes
+            </div>
+            <div class="counterBorder">:</div>
+            <div class="timeBox">
+              <div><span id="seconds"></span></div>
+              seconds
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-12 barBox">
+          <div id="progressBar">
+            <span id="progressText">
+		<span id="progressCount">0</span>%
+            </span>
+          </div>
+          <a href="#" class="someButtonInCounter">BUY NOW</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
   <!-- 맴버 시작 -->
