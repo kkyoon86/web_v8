@@ -135,6 +135,15 @@ header:before,
 }
 
 .hue {
+  background-color: #1E2C5D;
+}
+
+.articleBox.hue {
+  margin-bottom: 80px;
+}
+
+/*
+.hue {
   background-image: linear-gradient(rgba(252, 81, 39, 0.8), rgba(253, 131, 36, 0.4));
   background-color: hsl(0, 50%, 50%);
   animation: hue 10s infinite alternate;
@@ -160,7 +169,7 @@ header:before,
   }
 }
 
-
+*/
 
 @media screen and (max-width: 768px) {
   #timeline {

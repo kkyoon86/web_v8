@@ -23,7 +23,10 @@ ul.list-inline {
   position: fixed;
   width: 100%;
   z-index: 100;
+  text-decoration: none;
   font-family: 'prompt', sans-serif;
+
+
 }
 
 .someLogo {
@@ -86,7 +89,7 @@ ul.list-inline {
 }
 
 .naviBtn:hover {
-  text-decoration: underline !important;
+  text-decoration: underline;
   font-weight: 400;
   color: #fff;
 }

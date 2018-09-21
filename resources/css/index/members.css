@@ -2,12 +2,19 @@
 /* CSS Document */
 
 .peopleContainer {
-  width: 1230px;
+  width: 1200px;
   overflow: auto;
   padding-top: 60px;
   margin: 0 auto;
+  font-family: 'prompt', sans-serif;
 }
 
+.pTitleSe {
+  font-size: 20px;
+  padding-bottom: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
 
 img.people {
   max-width: 100%;

@@ -23,34 +23,35 @@
   <link rel="stylesheet" href="./resources/css/index/faq.css">
   <link rel="stylesheet" href="./resources/css/index/contact.css">
   <link rel="stylesheet" href="./resources/css/index/roadmap.css">
-  <link rel="stylesheet" href="./resources/css/index/middleprogress.css">
+  <link rel="stylesheet" href="./resources/css/index/middlecount.css">
+
 
 
   <!-- fontawesome StyleSheets -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
   <!-- animation StyleSheets -->
-  <link rel="stylesheet" href="https://kkyoon86.github.io/web_v8/resources/css/index/animation.css">
+  <link rel="stylesheet" href="./resources/css/index/animation.css">
 
   <!-- BootStrap StyleSheets -->
-  <link rel="stylesheet" href="https://kkyoon86.github.io/web_v8/resources/css/bootstrap.css">
+  <link rel="stylesheet" href="./resources/css/bootstrap.css">
 
   <!-- Script -->
 
 
-  <script src="https://kkyoon86.github.io/web_v8/resources/js/scrollMagic/debug.addIndicators.js" language="javascript"></script>
-  <script src="https://kkyoon86.github.io/web_v8/resources/js/scrollMagic/highlight.pack.js" language="javascript"></script>
-  <script src="https://kkyoon86.github.io/web_v8/resources/js/scrollMagic/modernizr.custom.min.js" language="javascript"></script>
-  <script src="https://kkyoon86.github.io/web_v8/resources/js/scrollMagic/animation.velocity.js" language="javascript"></script>
-  <script src="https://kkyoon86.github.io/web_v8/resources/js/scrollMagic/TweenMax.min.js" language="javascript"></script>
-  <script src="https://kkyoon86.github.io/web_v8/resources/js/scrollMagic/jquery.ScrollMagic.js" language="javascript"></script>
-  <script src="https://kkyoon86.github.io/web_v8/resources/js/scrollMagic/ScrollMagic.js" language="javascript"></script>
-  <script src="https://kkyoon86.github.io/web_v8/resources/js/scrollMagic/animation.gsap.js" language="javascript"></script>
-  <script src="https://kkyoon86.github.io/web_v8/resources/js/scrollMagic/TimelineMax.min.js" language="javascript"></script>
-  <script src="https://kkyoon86.github.io/web_v8/resources/js/scrollMagic/velocity.min.js" language="javascript"></script>
+  <script src="./resources/js/scrollMagic/debug.addIndicators.js" language="javascript"></script>
+  <script src="./resources/js/scrollMagic/highlight.pack.js" language="javascript"></script>
+  <script src="./resources/js/scrollMagic/modernizr.custom.min.js" language="javascript"></script>
+  <script src="./resources/js/scrollMagic/animation.velocity.js" language="javascript"></script>
+  <script src="./resources/js/scrollMagic/TweenMax.min.js" language="javascript"></script>
+  <script src="./resources/js/scrollMagic/jquery.ScrollMagic.js" language="javascript"></script>
+  <script src="./resources/js/scrollMagic/ScrollMagic.js" language="javascript"></script>
+  <script src="./resources/js/scrollMagic/animation.gsap.js" language="javascript"></script>
+  <script src="./resources/js/scrollMagic/TimelineMax.min.js" language="javascript"></script>
+  <script src="./resources/js/scrollMagic/velocity.min.js" language="javascript"></script>
 
-  <script src="https://kkyoon86.github.io/web_v8/resources/js/jquery-3.3.1.min.js" language="javascript"></script>
-  <script src="https://kkyoon86.github.io/web_v8/resources/js/index.js" language="javascript"></script>
+  <script src="./resources/js/jquery-3.3.1.min.js" language="javascript"></script>
+  <script src="./resources/js/index.js" language="javascript"></script>
 
 </head>
 
@@ -74,7 +75,7 @@
           <li><a class="naviBtn sliding-link" id="somesing" href="#sectionSome">About SOMESING</a></li>
           <li><a class="naviBtn sliding-link" id="member" href="#sectionMember">S-TEAM</a></li>
           <li><a class="naviBtn sliding-link" id="advisor" href="#sectionRoadmap">Roadmap</a></li>
-          <li><a class="naviBtn sliding-link" id="partner" href="#sectioncoin">Coin Allocation</a></li>
+          <li><a class="naviBtn sliding-link" id="partner" href="#sectionCoin">Coin Allocation</a></li>
           <li><a class="naviBtn sliding-link" id="coin" href="#">Login</a></li>
           <li><a class="naviBtn sliding-link" id="faq" href="#">Join</a></li>
           <li><a class="naviBtn sliding-link" id="contact" href="#sectionContact">Contact</a></li>
@@ -125,22 +126,22 @@
         <div class="col-md-6 timerCol">
           <div id="timer" class="timerContainer clearfix">
             <div class="timeBox timeBoxMargin">
-              <div><span id="days"></span></div>
+              <div><span id="days">0</span></div>
               days
             </div>
             <div class="counterBorder">:</div>
             <div class="timeBox timeBoxMargin">
-              <div><span id="hours"></span></div>
+              <div><span id="hours">0</span></div>
               hours
             </div>
             <div class="counterBorder">:</div>
             <div class="timeBox timeBoxMargin">
-              <div><span id="minutes"></span></div>
+              <div><span id="minutes">0</span></div>
               minutes
             </div>
             <div class="counterBorder">:</div>
             <div class="timeBox">
-              <div><span id="seconds"></span></div>
+              <div><span id="seconds">0</span></div>
               seconds
             </div>
           </div>
@@ -195,23 +196,18 @@
 
 
   <!--화이트페이퍼 다운-->
-
-
   <div class="articleBox whitPaperBox">
-
-
-
 
     <div class="col-md-12 whitePaperContents">
       <div class="articleTitle whitepaperTitle">WHITEPAPER</div>
       <div>
         <a href="#" class="someButton whiteButton">ENGLISH</a>
         <a href="#" class="someButton whiteButton">한국어</a>
-        <a href="#" class="someButton whiteButton">日本語</a>
+        <a href="#" class="someButton someB1 whiteButton">日本語</a>
+        <a href="#" class="someButton ">中國語</a><br>
       </div>
     </div>
   </div>
-
   <!--화이트페이퍼 다운 끝-->
 
 
@@ -219,7 +215,7 @@
   <div class="articleBox">
     <div class="fullArticle">
 
-      <div class="ecoSystem">SOMESING Ecosystem</div>
+      <div class="ecoSystem">SOMESING ECOSYSTEM</div>
       <div class="ecoSystemText">SOMESING 내에서 발생하는 부가가치와 즐거움이 합리적으로 분배되도록 하는 생태계 구성</div>
       <div class="articleMockupBox mockupbox2">
         <div class="col-md-12 articleMockup">
@@ -254,55 +250,38 @@
   </div>
 
   <!-- article 2 종료-->
-  <div id="middleCounterSome" class="sectionSomeMiddle">
-    <div class="middleCounterBox">
-      <div class="middleCounterRow">
-        <div class="col-md-6">
-          <div class="preSaleStart">Pre-Sale Starts In</div>
-          <div class="preSaleStartText">Schedule : 2018.00.00 00:00(KST)-2018.00.00 00:00(KST)</div>
 
-        </div>
-        <div class="col-md-6 timerCol">
-          <div id="timer" class="timerContainer clearfix">
-            <div class="timeBox timeBoxMargin">
-              <div><span id="days"></span></div>
-              days
-            </div>
-            <div class="counterBorder">:</div>
-            <div class="timeBox timeBoxMargin">
-              <div><span id="hours"></span></div>
-              hours
-            </div>
-            <div class="counterBorder">:</div>
-            <div class="timeBox timeBoxMargin">
-              <div><span id="minutes"></span></div>
-              minutes
-            </div>
-            <div class="counterBorder">:</div>
-            <div class="timeBox">
-              <div><span id="seconds"></span></div>
-              seconds
-            </div>
-          </div>
-        </div>
 
-        <div class="col-md-12 barBox">
-          <div id="progressBar">
-            <span id="progressText">
-		<span id="progressCount">0</span>%
-            </span>
-          </div>
-          <a href="#" class="someButtonInCounter">BUY NOW</a>
-        </div>
+
+  <!-- 중간 카운트다운 시작-->
+  <div class="articleBox middleCount">
+    <div class="middleCountBox">
+      <div class="col-md-6 middleCountRow">
+        <div class="preSaleStartSe">Pre-Sale Starts In</div>
+        <div class="preSaleStartTextSe">Schedule : 2018.00.00 00:00(KST)-2018.00.00 00:00(KST)</div>
+
+      </div>
+      <div class="col-md-6">
+        <ul id="timer2"></ul>
+      </div>
+      <div class="col-md-12">
+        <a href="#" class="someButtonInCounter">BUY NOW</a>
+
+
       </div>
     </div>
   </div>
+  <!-- 중간 카운트다운 종료-->
+
+
+
 
 
   <!-- 맴버 시작 -->
   <div id="sectionMember" class="peopleContainer">
     <div class="peopleRow">
-      <div class="pTitle">MEMBERS</div>
+      <div class="pTitle">SOMESING TEAM</div>
+      <div class="pTitleSe">Members</div>
       <div class="memberTable">
         <div class="col-md-4 col-xs-12 box">
           <div class="imgContainer">
@@ -399,7 +378,7 @@
             <div class="zoom">
               <div class="peopleImgBox1">
                 <img class="people" src="./resources/img/index/members/6.jpg" alt=""></div>
-              <div class="peopleTitle2">Ken YOON
+              <div class="peopleTitle2">KEN YOON
                 <div class="plusButton" onclick="plusEx.show('kenYoon');"><a class="hoverPlus" href="#none">
                   +</a>
                 </div>
@@ -511,7 +490,7 @@
   <!-- Adviser 시작 -->
   <div id="sectionAdvisor" class="peopleContainer">
     <div class="peopleRow">
-      <div class="pTitle">ADVISOR</div>
+      <div class="pTitleSe">Advisors</div>
       <div class="memberTable">
         <div class="col-md-4 col-xs-12 box">
           <div class="imgContainer">
@@ -610,7 +589,7 @@
     <!-- 마우스트리거 -->
     <div class="partnerBox">
       <div class="partnersContainer">
-        <div class="partnerTitle">PARTNER</div>
+        <div class="partnerTitle">PARTNERS</div>
 
         <div class="scFadeInUp partnerContainer">
           <div class="partnerImageContainer"><a href="https://www.skelterlabs.com" target="_blank"><img class="partnerImage" src="./resources/img/index/partners/skleter.jpg"></a></div>
@@ -740,19 +719,6 @@
 
 
 
-  <!-- 패럴렉스 실험 -->
-  <div id="trigger2" class="scale">
-    <div id="animate2" class="scScaleBox scScaleUp"></div>
-  </div>
-
-  <!-- 패럴렉스 실험-->
-  <div id="bgc-pa" class="bcg-parallax">
-    <div id="bgc-pa2" class="bcg"></div>
-    <div class="content-parall">
-      SOMESING
-    </div>
-
-  </div>
 
 
 
@@ -819,6 +785,25 @@
     </div>
   </div>
   <!--  FAQ 종료 -->
+
+
+  <!-- 패럴렉스 실험 -->
+  <div id="trigger2" class="scale">
+    <div id="animate2" class="scScaleBox scScaleUp"></div>
+  </div>
+
+  <!-- 패럴렉스 실험-->
+  <div id="bgc-pa" class="bcg-parallax">
+    <div id="bgc-pa2" class="bcg"></div>
+    <div class="content-parall">
+      SOMESING
+    </div>
+
+  </div>
+  <!-- 패럴렉스 실험  끝-->
+
+
+
 
   <!--  contact form 시작 -->
   <div id="sectionContact" class="box">

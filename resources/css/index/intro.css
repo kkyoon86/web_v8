@@ -56,33 +56,40 @@
   font-weight: 400;
   letter-spacing: 0.8px;
   padding: 16px;
+  font-family: 'prompt', sans-serif;
 }
 
 .introWhitePaper {
+  font-family: 'prompt', sans-serif;
   color: #fff;
-  font-size: 32px;
-  letter-spacing: 4px;
-  padding-top: 16px;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 6px;
+  padding-top: 30px
 }
 
 .someButton {
   background-color: #EF4123;
   border: none;
   color: white;
-  width: 120px;
-  padding: 12px 0;
+  width: 140px;
+  padding: 8px 0;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   font-family: 'prompt', sans-serif;
   letter-spacing: 1px;
-  margin-top: 30px;
+  margin-top: 20px;
   z-index: 3;
 }
 
 .someB1 {
   margin-right: 30px;
+}
+
+.someB2 {
+  margin-top: 40px;
 }
 
 /*패럴렉스 실험*/

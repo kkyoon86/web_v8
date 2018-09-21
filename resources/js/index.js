@@ -2,8 +2,54 @@
 $(document).ready(function () {
   setSlidingLink();
   setNaniLinkAnimation();
+
+
+  //타이머
+  var timer;
+
+  var compareDate = new Date("2018-10-19");
+  compareDate.setDate(compareDate.getDate() + 2); //just for this demo today + 7 days
+
+  timer = setInterval(function () {
+    timeBetweenDates(compareDate);
+  }, 1000);
+
+  function timeBetweenDates(toDate) {
+    var dateEntered = toDate;
+    var now = new Date();
+    var difference = dateEntered.getTime() - now.getTime();
+
+    if (difference <= 0) {
+
+      // Timer done
+      clearInterval(timer);
+
+    } else {
+
+      var seconds = Math.floor(difference / 1000);
+      var minutes = Math.floor(seconds / 60);
+      var hours = Math.floor(minutes / 60);
+      var days = Math.floor(hours / 24);
+
+      hours %= 24;
+      minutes %= 60;
+      seconds %= 60;
+
+      $("#days").text(days);
+      $("#hours").text(hours);
+      $("#minutes").text(minutes);
+      $("#seconds").text(seconds);
+    }
+  }
+
+
+});
+
+
+$(function () {
   //parallax
   var controller = new ScrollMagic.Controller();
+
   //build scene
   var scene = new ScrollMagic.Scene({
       triggerElement: "#trigger2",
@@ -48,49 +94,7 @@ $(document).ready(function () {
     }))
     .addTo(controller);
 
-  //타이머
-  var timer;
-
-  var compareDate = new Date("2018-09-19");
-  compareDate.setDate(compareDate.getDate() + 2); //just for this demo today + 7 days
-
-  timer = setInterval(function () {
-    timeBetweenDates(compareDate);
-  }, 1000);
-
-  function timeBetweenDates(toDate) {
-    var dateEntered = toDate;
-    var now = new Date();
-    var difference = dateEntered.getTime() - now.getTime();
-
-    if (difference <= 0) {
-
-      // Timer done
-      clearInterval(timer);
-
-    } else {
-
-      var seconds = Math.floor(difference / 1000);
-      var minutes = Math.floor(seconds / 60);
-      var hours = Math.floor(minutes / 60);
-      var days = Math.floor(hours / 24);
-
-      hours %= 24;
-      minutes %= 60;
-      seconds %= 60;
-
-      $("#days").text(days);
-      $("#hours").text(hours);
-      $("#minutes").text(minutes);
-      $("#seconds").text(seconds);
-    }
-  }
-
-
-
 });
-
-
 
 
 
@@ -392,6 +396,41 @@ $(document).ready(function () {
 });
 
 
+$(function () {
+  var getEndDate = new Date('10/22/2018 09:00 AM');
+
+  var getSeconds = 1000;
+  var getMinutes = getSeconds * 60;
+  var getHours = getMinutes * 60;
+  var getDays = getHours * 24;
+
+  var getTimer = document.getElementById('timer2')
+  var message = 'Time is out';
+  var timer;
+
+  function timerCountdown() {
+    var getNowDate = new Date();
+    var getSeparate = getEndDate - getNowDate;
+
+    if (getSeparate < 0) {
+      clearInterval(timer);
+      getTimer.innerHTML = '<li><span>' + message + '</span></li>'
+      return false;
+    }
+
+    var seconds = Math.floor((getSeparate % getMinutes) / getSeconds);
+    var minutes = Math.floor((getSeparate % getHours) / getMinutes);
+    var hours = Math.floor((getSeparate % getDays) / getHours);
+    var days = Math.floor(getSeparate / getDays);
+
+    getTimer.innerHTML = '<li><span>' + days + '</span>Days</li><li class="dot">:</li>';
+    getTimer.innerHTML += '<li><span>' + hours + '</span>Hours</li><li class="dot">:</li>';
+    getTimer.innerHTML += '<li><span>' + minutes + '</span>Minutes</li><li class="dot">:</li>';
+    getTimer.innerHTML += '<li><span>' + seconds + '</span>Seconds</li>';
+  }
+
+  time = setInterval(timerCountdown, 1000);
+});
 
 
 //프로그래스 바

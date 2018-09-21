@@ -19,8 +19,9 @@
   position: absolute;
   width: 1200px;
   margin: -100px auto 0 auto;
-  padding: 50px 30px;
+  padding: 24px 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(232, 56, 13, 0.19);
+  font-family: 'prompt', sans-serif;
 }
 
 .clearfix {
@@ -34,17 +35,18 @@
 }
 
 .timerContainer {
-  width: 78%;
+  width: 84%;
   margin: 0 auto;
 }
 
 #timer {
   font-size: 18px;
+  letter-spacing: 0.5px;
   color: #999;
 }
 
 #timer span {
-  font-size: 50px;
+  font-size: 40px;
   color: #1E2C5D;
   margin: 0 3px 0 15px;
   font-weight: bold;
@@ -72,15 +74,18 @@
 
 
 .preSaleStart {
-  font-size: 50px;
+  font-size: 40px;
   color: #1E2C5D;
   font-weight: bold;
-  letter-spacing: 1.5px;
+  letter-spacing: 2px;
+
 }
 
 .preSaleStartText {
   color: #999;
   font-size: 18px;
+
+  letter-spacing: 0.5px;
 }
 
 #progressBar {
@@ -88,7 +93,7 @@
 
   border: solid 1px #1E2C5D;
   width: 100%;
-  padding: 4px;
+  padding: 2px;
   border-radius: 100px;
   text-align: center;
   background: rgba( 255, 255, 255, 0.9);
@@ -98,7 +103,7 @@
 
   display: block;
   width: 100%;
-  font-size: 24px;
+  font-size: 20px;
   font-family: 'prompt', sans-serif;
   font-weight: 400;
   background: rgba( 0, 0, 0, 0.7);
