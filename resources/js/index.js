@@ -4,6 +4,16 @@ $(document).ready(function () {
   setNaniLinkAnimation();
 
 
+
+
+
+});
+
+
+
+
+$(function () {
+
   //타이머
   var timer;
 
@@ -43,7 +53,12 @@ $(document).ready(function () {
   }
 
 
+
 });
+
+
+
+
 
 
 $(function () {
