@@ -18,19 +18,19 @@ ul.list-inline {
 
 
 .naviBar {
-  height: 60px;
-  line-height: 60px;
+  height: 80px;
+  line-height: 80px;
   position: fixed;
   width: 100%;
   z-index: 100;
   text-decoration: none;
   font-family: 'prompt', sans-serif;
-
-
+  background-color: #ef4123;
+  top: 0;
 }
 
 .someLogo {
-  height: 36px;
+  height: 40px;
 }
 
 .naviBar.blur {
@@ -38,39 +38,85 @@ ul.list-inline {
 }
 
 .naviContainer {
-  width: 1200px;
   position: relative;
-  margin: 0 auto 0 auto;
+  overflow: auto;
+  width: 100%;
+
 }
+
+.naviLinkContainer {
+  margin: 0 120px;
+}
+
+.naviLinkBox {
+  float: left;
+}
+
+.naviLinkBox2 {
+  float: right;
+  width: 24vw;
+
+  position: relative;
+  margin-right: 120px;
+}
+
+.naviContainerWhite {
+  position: fixed;
+  height: 0;
+  right: 0;
+
+  border-bottom: 80px solid #fff;
+  border-left: 80px solid transparent;
+}
+
+select {
+  width: 30px;
+  background-color: transparent;
+  border: 0px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  color: #333333 !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.3px !important;
+  background: url('../../img/index/intro/select.png') no-repeat 95% 50%;
+  background-size: 9px;
+}
+
+
+
+select::-ms-expand {
+  display: none;
+}
+
+
 
 .naviLogo {
   top: 0px;
   left: 0px;
-
-  width: 200px;
+  width: 92px;
   height: 100%;
-  text-align: left;
-
-
-  font-weight: bold;
-  letter-spacing: 0.6px;
   color: #fff;
   float: left;
 }
 
 .naviBtn {
   margin-left: 20px;
-  font-size: 12px;
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: 400;
   letter-spacing: 0.3px;
-  color: #fff;
+  color: #fff !important;
 }
 
-.naviLinkContainer {
-  float: right;
-
-  height: 100%;
+.naviBtn2 {
+  margin-right: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  color: #333333 !important;
 }
+
 
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -82,6 +128,8 @@ ul.list-inline {
 .naviLink {
   list-style: none;
   text-align: right;
+  padding: 0;
+  margin: 0;
 }
 
 .naviLink > li {

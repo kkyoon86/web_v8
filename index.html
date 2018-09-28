@@ -9,7 +9,7 @@
 
   <!-- Font -->
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Prompt:400,700,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Prompt:300,400,700" rel="stylesheet">
 
   <!-- Custom StyleSheets -->
   <link rel="stylesheet" href="./resources/css/index/intro.css">
@@ -59,67 +59,77 @@
 
 
   <!-- 내비 바 -->
-  <nav class="naviBar">
+  <header class="naviBar">
     <div class="naviContainer">
-      <!-- 썸씽 로고 -->
-      <div class="naviLogo"><a href="#none"><img src="./resources/img/index/intro/logo.png" alt="" class="someLogo"></a></div>
-
-
-
-
-      <!-- 메뉴버튼들 -->
-
-
       <div class="naviLinkContainer">
-        <ul class="naviLink">
-          <li><a class="naviBtn sliding-link" id="somesing" href="#sectionSome">About SOMESING</a></li>
-          <li><a class="naviBtn sliding-link" id="member" href="#sectionMember">S-TEAM</a></li>
-          <li><a class="naviBtn sliding-link" id="advisor" href="#sectionRoadmap">Roadmap</a></li>
-          <li><a class="naviBtn sliding-link" id="partner" href="#sectionCoin">Coin Allocation</a></li>
-          <li><a class="naviBtn sliding-link" id="coin" href="#">Login</a></li>
-          <li><a class="naviBtn sliding-link" id="faq" href="#">Join</a></li>
-          <li><a class="naviBtn sliding-link" id="contact" href="#sectionContact">Contact</a></li>
-        </ul>
+        <!-- 썸씽 로고 -->
+        <div class="naviLogo"><a href="#none"><img src="./resources/img/index/intro/logo.png" alt="" class="someLogo"></a></div>
+
+
+
+
+        <!-- 메뉴버튼들 -->
+
+
+
+        <div class="naviLinkBox">
+          <ul class="naviLink">
+            <li><a class="naviBtn sliding-link" id="somesing" href="#sectionSome">About SOMESING</a></li>
+            <li><a class="naviBtn sliding-link" id="member" href="#sectionMember">S TEAM</a></li>
+            <li><a class="naviBtn sliding-link" id="advisor" href="#sectionRoadmap">Roadmap</a></li>
+            <li><a class="naviBtn sliding-link" id="partner" href="#sectionCoin">Coin Allocation</a></li>
+
+
+          </ul>
+        </div>
+
+
+        <div class="naviContainerWhite">
+          <div class="naviLinkBox2">
+            <ul class="naviLink">
+              <li><a class="naviBtn2 sliding-link" id="coin" href="#">Login</a></li>
+              <li><a class="naviBtn2 sliding-link" id="faq" href="#">Join</a></li>
+              <li><select id="langSelect">
+        <option value="apple.com">En</option>
+		<option value="https://nike.com">Kr</option>
+        <option value=""> Jp </option>
+        
+    </select></li>
+
+            </ul>
+          </div>
+        </div>
+
+
+
       </div>
 
 
     </div>
-  </nav>
-  <div class="mainTitleBox">
-    <div class="titleCommon maintitle">Social Music Service</div>
-    <div class="titleCommon maintitle2">based on</div>
-    <div class="titleCommon maintitle3">BLOCKCHAIN TECHNOLOGY</div>
-    <div class="mainText">You have personal studio in your hands.<br> Mix up and create your own songs!</div>
-    <div class="introWhitePaper">WHITEPAPER</div>
-
-    <a href="#" class="someButton someB1">ENGLISH</a>
-    <a href="#" class="someButton someB1">한국어</a>
-    <a href="#" class="someButton someB1">日本語</a>
-    <a href="#" class="someButton ">中國語</a><br>
-    <a href="#" class="someButton someB2">BUY COIN</a>
-  </div>
-
+  </header>
 
   <!-- 인트로 시작 -->
+  <div class="mainImgContainer">
+    <div class="mainTitleBox">
+      <div class="titleCommon maintitle">Social Music Service<br>based on<br>BLOCKCHAIN TECHNOLOGY</div>
 
-  <!-- 마우스 섹션 트리거 -->
+      <div class="mainText">You can sing a song whenever, wherever, forever. <br>365days 24hours Free | Over 40,000 songs Free | Everyday New Songs offering
+      </div>
+      <div class="introWhitePaper">WHITEPAPER DOWNLOAD <span class="whitePaperEn">for English</span>
+        <a href="#none" class="introWhiteDown">
+          <Img class="introWhiteDownImg" src="resources/img/index/intro/ico_arrow.png"></Img>
+        </a>
+      </div>
 
-  <div id="sectionHome" class="introBox">
-
-
-
-    <div class="introParallax"></div>
-
-
-
-  </div>
-  <!-- 인트로 종료 -->
-
-  <div id="counterSome" class="sectionSome">
+      <!--<a href="#" class="someButton someB1">ENGLISH</a>
+      <a href="#" class="someButton someB1">한국어</a>
+      <a href="#" class="someButton someB1">日本語</a>
+      <a href="#" class="someButton ">中國語</a><br>-->
+    </div>
     <div class="counterBox">
       <div class="counterRow">
-        <div class="col-md-6">
-          <div class="preSaleStart">Pre-Sale Starts In</div>
+        <div class="col-md-6 preSaleStartCon">
+          <div class="preSaleStart">PRE-SALE STARTS IN</div>
           <div class="preSaleStartText">Schedule : 2018.00.00 00:00(KST)-2018.00.00 00:00(KST)</div>
 
         </div>
@@ -147,17 +157,49 @@
           </div>
         </div>
 
-        <div class="col-md-12 barBox">
-          <div id="progressBar">
-            <span id="progressText">
+        <div class="col-md-12 barCon">
+          <div class="col-md-9 barBox">
+            <div id="progressBar">
+              <span id="progressText">
 		<span id="progressCount">0</span>%
-            </span>
+              </span>
+            </div>
           </div>
-          <a href="#" class="someButtonInCounter">BUY NOW</a>
+          <div class="col-md-3 introBuyButton">
+            <a href="#" class="introButton">BUY NOW <img class="buyArrow" src="./resources/img/index/intro/ico_buy_arrow.png" alt=""></a>
+          </div>
+
         </div>
       </div>
     </div>
+
   </div>
+
+
+
+
+  <!-- 뒷배경 -->
+
+  <div id="sectionHome" class="introBox">
+
+
+
+    <div class="introParallax"></div>
+
+
+
+  </div>
+  <!-- 인트로 종료 -->
+
+
+
+  <!--아이콘 얼라이언스-->
+  <div class="articleBox iconContainer">
+    <div class="iconTitle">ICON ALLIANCE</div>
+    <div class="iconText">SOMESING ecosystem must be able to support huge amount of transactions between users, requiring fast speed and scalability. ICON's TPS and Loopchain technology is well optimized enough for SOMESING to create a decentralized karaoke ecosystem with ICON</div>
+  </div>
+
+
 
   <!-- 썸씽 설명 시작 -->
   <div id="sectionSome" class="articlecContainer1">
@@ -173,9 +215,9 @@
         <!--<img class="scFadeInUp articleVerticalImage" src="./resources/img/index/article1/service.png" />-->
         <div class="articleMockupBox">
           <div class="col-md-7 articleMockup">
-            <div class="mockupBox">
-              <img class="mockup1" src="./resources/img/index/article1/mockup1.png" alt="">
-              <img class="mockup2" src="./resources/img/index/article1/mockup2.png" alt="">
+            <div id="mockupTrigger" class="mockupBox">
+              <img id="mockupEffect1" class="mockup1" src="./resources/img/index/article1/mockup1.png" alt="">
+              <img id="mockupEffect2" class="mockup2" src="./resources/img/index/article1/mockup2.png" alt="">
             </div>
           </div>
           <div class="col-md-5 articleMockup">
@@ -196,11 +238,11 @@
 
 
   <!--화이트페이퍼 다운-->
-  <div class="articleBox whitPaperBox">
+  <div id="whitePaperTrigger" class="articleBox whitPaperBox">
 
     <div class="col-md-12 whitePaperContents">
       <div class="articleTitle whitepaperTitle">WHITEPAPER</div>
-      <div>
+      <div class="whitePaperButtonBox">
         <a href="#" class="someButton whiteButton">ENGLISH</a>
         <a href="#" class="someButton whiteButton">한국어</a>
         <a href="#" class="someButton someB1 whiteButton">日本語</a>
@@ -378,7 +420,7 @@
             <div class="zoom">
               <div class="peopleImgBox1">
                 <img class="people" src="./resources/img/index/members/6.jpg" alt=""></div>
-              <div class="peopleTitle2">KEN YOON
+              <div class="peopleTitle2">Ken YOON
                 <div class="plusButton" onclick="plusEx.show('kenYoon');"><a class="hoverPlus" href="#none">
                   +</a>
                 </div>
@@ -413,7 +455,7 @@
             <div class="zoom">
               <div class="peopleImgBox1">
                 <img class="people" src="./resources/img/index/members/8.jpg" alt=""></div>
-              <div class="peopleTitle2">YunRyeom Kim
+              <div class="peopleTitle2">Yunryeom Kim
                 <div class="plusButton" onclick="plusEx.show('yrKim');"><a class="hoverPlus" href="#none">
                   +</a>
                 </div>
@@ -430,7 +472,7 @@
             <div class="zoom">
               <div class="peopleImgBox1">
                 <img class="people" src="./resources/img/index/members/9.jpg" alt=""></div>
-              <div class="peopleTitle2">Heesuk Choi
+              <div class="peopleTitle2">Heeseok Choi
                 <div class="plusButton" onclick="plusEx.show('hsChoi');"><a class="hoverPlus" href="#none">
                   +</a>
                 </div>
@@ -849,10 +891,34 @@
   <!-- footer -->
 
   <div class="footerDefault">
-    <div class="footerLogo">SOMESING</div>
-    <div class="footerLicense">©2018 SOMESING. All Copyrights reserved<br/>Terms of Use</div>
-  </div>
+    <div class="footerBox">
+      <div class="col-md-4 footer-1">
+        <img class="footerLogo" src="./resources/img/index/intro/logo.png" alt="">
+        <a href="" class="footerA privatePol">Private Policy</a>
+        <span class="footerI">|</span>
+        <a href="" class="footerA termsCondi">Terms & conditions</a>
+        <br>Contact : support@somesing.io
 
+      </div>
+      <div class="col-md-4 footer-2">
+        <div class="footer2Title">Whitepaper</div>
+        <ul class="footerWhitePaper">
+          <li>English</li>
+          <li>한국어</li>
+          <li>日本語</li>
+          <li>中國語</li>
+
+        </ul>
+
+      </div>
+      <div class="col-md-4 footer-3">
+        <a href="#" class="footerButton">BUY COIN</a>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-medium-m"></i>
+      </div>
+
+    </div>
+  </div>
 </body>
 
 </html>

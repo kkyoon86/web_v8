@@ -2,14 +2,40 @@
 $(document).ready(function () {
   setSlidingLink();
   setNaniLinkAnimation();
-
-
+  multipleToggle();
+  langSelect();
 
 
 
 });
 
+/*
+$(function () {
+  // Add smooth scrolling to all links
+  $("a").on('click', function (event) {
 
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function () {
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+
+});
+*/
 
 
 $(function () {
@@ -97,18 +123,40 @@ $(function () {
     .setTween(parallaxTl)
     .addTo(controller);
 
-  //메인이미지 패럴렉스
-  var mainParallaxScene = new ScrollMagic.Scene({
-      triggerElement: '.introBox',
-      triggerHook: 1,
-      duration: '200%'
+
+  //아이폰목업 패럴렉스
+  var scene = new ScrollMagic.Scene({
+      triggerElement: "#mockupTrigger",
+      duration: 400
     })
-    .setTween(TweenMax.from('.introParallax', 1, {
-      y: '-30%',
-      ease: Power0.easeNone
-    }))
+    // animate color and top border in relation to scroll position
+    .setTween("#mockupEffect1", {
+      y: -30,
+      scale: 1.1
+    }) // the tween durtion can be omitted and defaults to 1
+    .addTo(controller);
+  var scene = new ScrollMagic.Scene({
+      triggerElement: "#mockupTrigger",
+      duration: 400
+    })
+    // animate color and top border in relation to scroll position
+    .setTween("#mockupEffect2", {
+      scale: 1.1
+    }) // the tween durtion can be omitted and defaults to 1
     .addTo(controller);
 
+  // 중간 버튼 패럴랙스
+
+  var scene = new ScrollMagic.Scene({
+      triggerElement: ".whitePaperButtonBox",
+      duration: 400
+    })
+    // animate color and top border in relation to scroll position
+    .setTween(".someButton", {
+      y: -20,
+      scale: 1.1
+    }) // the tween durtion can be omitted and defaults to 1
+    .addTo(controller);
 });
 
 
@@ -289,6 +337,8 @@ window.onload = function () {
 }
 */
 
+
+//팀맴버 상세설명
 function multipleToggle() {
   // eigenschappen
   this.oud = ""; // initiele waarde
@@ -411,6 +461,8 @@ $(document).ready(function () {
 });
 
 
+//중단 날짜 카운터
+
 $(function () {
   var getEndDate = new Date('10/22/2018 09:00 AM');
 
@@ -455,16 +507,28 @@ $(function () {
 let advanceProgress = (amount) => {
   amount = amount || 0;
   document.getElementById('progressCount').innerHTML = amount;
-  document.getElementById('progressBar').style.backgroundImage = 'linear-gradient(110deg, #1E2C5D ' + amount + '%, rgba( 255, 255, 255, 0.9 ) ' + amount + '%)';
-  document.getElementById('progressText').style.backgroundImage = 'linear-gradient(110deg, #FFFFFF ' + amount + '%, rgba( 0, 0, 0, 0.7 ) ' + amount + '%)';
+  document.getElementById('progressBar').style.backgroundImage = 'linear-gradient(110deg, #ffffff ' + amount + '%, rgba( 255, 255, 255, 0.2 ) ' + amount + '%)';
+  document.getElementById('progressText').style.backgroundImage = 'linear-gradient(110deg, rgba( 0, 0, 0, 0.2 ) ' + amount + '%, rgba( 0, 0, 0, 0 ) ' + amount + '%)';
 }
 
 let percentage = 0;
 let percentageInterval = setInterval(() => {
   percentage++;
-  if (percentage <= 80) {
+  if (percentage <= 70) {
     advanceProgress(percentage);
   } else {
     clearInterval(percentageInterval);
   }
 }, 50);
+
+
+function langSelect() {
+
+  //언어 변환기
+  document.getElementById("langSelect").onchange = function () {
+    if (this.selectedIndex !== 0) {
+      window.location.href = this.value;
+    }
+  };
+
+}

@@ -1,6 +1,10 @@
 @charset "UTF-8";
 /* CSS Document */
 
+.iconContainer {
+  margin-top: 240px;
+}
+
 .pointTitle {
   color: #EF4123;
 }
@@ -39,9 +43,6 @@
   font-size: 24px !important;
 }
 
-.articlecContainer1 {
-  margin-top: 240px;
-}
 
 .articleBox {
   padding-top: 80px;
@@ -114,7 +115,7 @@
 
 .ecoSystemBox {
   text-align: center;
-  width: 50vw;
+  width: 90vh;
   margin: 0 auto;
 }
 
@@ -130,14 +131,14 @@
 
 
 .mockup1 {
-  width: 45%;
+  width: 40%;
   margin-top: 100px;
 }
 
 .mockup2 {
-  width: 45%;
+  width: 40%;
   margin-top: 100px;
-  margin-left: -20px;
+
 }
 
 .articleContent {
