@@ -5,8 +5,7 @@
   position: relative;
   width: 1200px;
   margin: 0 auto 0 auto;
-  padding: 3vh 0 0 0;
-
+  padding: 4vh 0 0 0;
   font-family: 'prompt', sans-serif;
 }
 
@@ -20,16 +19,14 @@
   display: table;
 }
 
-.timerContainer {
-  width: 84%;
-  float: right;
-}
+
 
 #timer {
   font-size: 14px;
   letter-spacing: 0.5px;
   color: #fff;
   font-weight: 300;
+  float: right;
 }
 
 #timer span {
@@ -37,6 +34,8 @@
   color: #fff;
   margin: 0 3px 0 15px;
   font-weight: bold;
+  line-height: 42px;
+  letter-spacing: 1px;
 }
 
 #timer span:first-child {
@@ -45,7 +44,7 @@
 
 .timeBox {
   text-align: center;
-  float: right;
+  display: inline-block;
 }
 
 .timeBoxMargin {
@@ -53,19 +52,21 @@
 }
 
 .counterBorder {
-  float: right;
+  vertical-align: top;
+  display: inline-block;
+  margin-top: 2px;
   margin-left: 24px;
   font-size: 42px;
   color: #fff;
+  line-height: 30px;
 }
 
 
 .preSaleStart {
-  font-size: 40px;
+  font-size: 32px;
   color: #fff;
   font-weight: bold;
-  letter-spacing: 10px;
-
+  letter-spacing: 6px;
 }
 
 .preSaleStartText {
@@ -83,8 +84,8 @@
   padding: 2px;
 
   text-align: center;
-  height: 52px;
-  line-height: 48px;
+  height: 44px;
+  line-height: 42px;
   letter-spacing: 0.5px;
 
 }
@@ -96,7 +97,7 @@
   font-size: 14px;
   font-family: 'prompt', sans-serif;
   font-weight: 700;
-  background: rgba( 239, 65, 35, 0.8);
+  background: rgba( 239, 65, 35, 1);
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -114,7 +115,7 @@
 }
 
 .col-md-12.barCon {
-  padding: 30px 0 0 0;
+  padding: 16px 0 0 0;
 }
 
 .col-md-3.introBuyButton {
@@ -132,13 +133,13 @@ img.buyArrow {
   border: none;
   color: #333333;
   width: 100%;
-  padding: 16px 12px;
+  padding: 12px 14px;
   text-align: left;
   text-decoration: none;
   display: inline-block;
   font-size: 14px;
   font-family: 'prompt', sans-serif;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   font-weight: 700;
   z-index: 3;
 
@@ -151,8 +152,14 @@ img.buyArrow {
   padding: 13px 0;
 }
 
+.someCap {
+  display: inline-block;
+  color: #fff;
+  margin-top: 6px;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
 
-@media (max-width: 768px) {
-
-
-  @media (max-width: 576px) {
+span.someCap.hardCap {
+  float: right;
+}

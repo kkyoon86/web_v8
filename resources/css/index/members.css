@@ -2,9 +2,9 @@
 /* CSS Document */
 
 .peopleContainer {
-  width: 1200px;
+  max-width: 1260px;
   overflow: auto;
-  padding-top: 60px;
+  padding-top: 150px;
   margin: 0 auto;
   font-family: 'prompt', sans-serif;
 }
@@ -14,21 +14,31 @@
   padding-bottom: 30px;
   font-weight: 700;
   letter-spacing: 1px;
+  margin-left: 30px;
+  color: #fc5127;
 }
 
 img.people {
   max-width: 100%;
+}
 
+div#sectionAdvisor {
+  padding-top: 20px;
+}
+
+.col-md-3.col-xs-6.box {
+  padding: 0 30px;
 }
 
 .pTitle {
   font-family: 'prompt', sans-serif;
-  font-size: 24px;
+  font-size: 46px;
   font-weight: 700;
   letter-spacing: 3px;
-  text-align: center;
-  padding-bottom: 40px;
-  color: #fc5127;
+  text-align: left;
+  padding-bottom: 30px;
+  color: #1E2C5D;
+  margin-left: 30px
 }
 
 .imgContainer {
@@ -39,10 +49,6 @@ img.people {
 
 .peopleImgBox1 {
   overflow: hidden;
-  width: 34%;
-  float: left;
-  margin-bottom: 6px;
-  margin-right: 12px;
 }
 
 .peopleRow {
@@ -55,36 +61,24 @@ img.people {
 }
 
 .peopleLine {
-  margin: 8px 0 7px 0;
-  width: 6%;
-  border-top: 2px solid #525252;
+  margin: 14px 0 8px 0;
+  width: 24px;
+  border-top: 2px solid #fc5127;
 }
 
 .peopleTitle2 {
-  padding-top: 0px;
-  font-size: 1.5rem;
-  color: #525252;
+  padding-top: 24px;
+  font-size: 1.8rem;
+  color: #1e2c5d;
   font-weight: 700;
   letter-spacing: 0.5px;
 }
 
-.peopleTitle {
-  padding-top: 0px;
-  font-size: 2rem;
-  color: #fa5326;
-  font-weight: 700;
-}
 
-.peoplePosition {
-  padding-top: 20px;
-  font-size: 2rem;
-  color: #fa5326;
-  font-weight: 500;
-}
 
 .peopleText {
-  font-weight: 500;
-  font-size: 1.5rem;
+  font-weight: 300;
+  font-size: 1.4rem;
   color: #a4a4a4;
   padding-top: 0;
   transition: transform .3s;
@@ -92,8 +86,8 @@ img.people {
 
 .peopleText2 {
   padding-top: 8px;
-  font-weight: 400;
-  font-size: 1.2rem;
+  font-weight: 300;
+  font-size: 1.4rem;
   color: #a4a4a4;
   line-height: 2rem;
   transition: transform .3s;
@@ -116,7 +110,7 @@ a:hover {
 }
 
 .memberTable {
-  width: 1000px;
+  max-width: 1260px;
   display: flex;
   flex-wrap: wrap;
   margin: auto;

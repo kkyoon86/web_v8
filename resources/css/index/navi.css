@@ -27,6 +27,7 @@ ul.list-inline {
   font-family: 'prompt', sans-serif;
   background-color: #ef4123;
   top: 0;
+  letter-spacing: 0.5px;
 }
 
 .someLogo {
@@ -45,7 +46,7 @@ ul.list-inline {
 }
 
 .naviLinkContainer {
-  margin: 0 120px;
+  margin: 0 112.5px;
 }
 
 .naviLinkBox {
@@ -80,8 +81,8 @@ select {
   font-size: 14px !important;
   font-weight: 400 !important;
   letter-spacing: 0.3px !important;
-  background: url('../../img/index/intro/select.png') no-repeat 95% 50%;
-  background-size: 9px;
+  background: url('../../img/index/intro/select.png') no-repeat 95% 49%;
+  background-size: 8px;
 }
 
 

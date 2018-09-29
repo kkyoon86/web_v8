@@ -13,14 +13,14 @@ a:focus {
 }
 
 .introBox {
-  height: 92vh;
+  height: 122vh;
   vertical-align: middle;
   text-align: center;
   overflow: hidden;
   position: relative;
   background-color: #000;
   z-index: -2;
-  margin-top: 80px;
+  margin-top: 60px;
 }
 
 
@@ -38,11 +38,13 @@ a:focus {
 
 .mainTitleBox {
   position: relative;
-  height: 64vh;
-  padding: 6vw;
+  height: 100vh;
+  padding: 250px 0 0 110px;
   background: url(../../img/index/intro/intro.jpg);
   background-size: cover;
-  margin-left: 120px;
+  background-position-y: 80px;
+  margin-left: 112.5px;
+  margin-top: -60px
 }
 
 .titleCommon {

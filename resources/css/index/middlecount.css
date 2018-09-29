@@ -5,30 +5,39 @@
   width: 1200px;
   margin: 0 auto;
   font-family: 'prompt', sans-serif;
+  padding: 80px 0;
+  overflow: auto;
 }
 
-.articleBox.middleCount {
-  background-color: #1E2C5D;
-  background-size: cover;
-  margin: 80px 0;
+.middleCount {
+
+  overflow: hidden;
+  margin-top: -200px;
+  position: relative;
 }
 
 .preSaleStartSe {
-  font-size: 50px;
+  font-size: 32px;
   color: #fff;
   font-weight: bold;
-  letter-spacing: 2px;
-  text-align: left;
+  letter-spacing: 6px;
 
+}
 
+.middleBack {
+  background-color: #ef4123;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin-left: -112.5px
 }
 
 .preSaleStartTextSe {
   color: #fff;
-  font-size: 18px;
-  text-align: left;
-
-  letter-spacing: 0.5px
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
 }
 
 .middleCountRow {
@@ -42,6 +51,7 @@
   color: #fff;
   margin: 0;
   padding: 0;
+  float: right;
 
 }
 
@@ -55,16 +65,44 @@
   text-align: center;
   padding-left: 10px;
   padding-right: 10px;
-  font-size: 18px;
+  font-size: 14px;
   vertical-align: top;
-
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 0.5px
 }
 
 #timer2 li span {
   display: block;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 700;
 
+}
+
+
+/*progress bar*/
+
+#progressBarSe {
+  margin: auto;
+
+  border: none;
+  width: 100%;
+  padding: 2px;
+
+  text-align: center;
+  height: 44px;
+  line-height: 42px;
+  letter-spacing: 0.5px;
+
+}
+
+#progressTextSe {
+
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  font-family: 'prompt', sans-serif;
+  font-weight: 700;
+  background: rgba( 239, 65, 35, 1);
+  -webkit-background-clip: text;
+  color: transparent;
 }
